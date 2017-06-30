@@ -15,5 +15,9 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-   
+  display.clearDisplay();
+  display.setCursor(0, 0);
+  display.println(analogRead(A0));
+  display.display();
+
 }
